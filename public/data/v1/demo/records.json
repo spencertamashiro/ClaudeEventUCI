@@ -1,0 +1,308 @@
+{
+  "version": "v1",
+  "mode": "demo",
+  "rules": [
+    {
+      "id": "court-off-hours",
+      "featureId": "courtyard-link",
+      "devices": [
+        "bicycle",
+        "ebike-1",
+        "ebike-2",
+        "ebike-3",
+        "escooter"
+      ],
+      "sourceIds": [
+        "demo-fixtures"
+      ],
+      "status": "demo",
+      "explanation": "This fictional link permits riding outside weekday pedestrian hours.",
+      "appliesTo": "ride",
+      "access": "allowed",
+      "riderSpeedMph": 8,
+      "exceptions": [
+        {
+          "weekdays": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "08:30",
+          "end": "17:00"
+        }
+      ]
+    },
+    {
+      "id": "court-peak",
+      "featureId": "courtyard-link",
+      "devices": [
+        "bicycle",
+        "ebike-1",
+        "ebike-2",
+        "ebike-3",
+        "escooter"
+      ],
+      "sourceIds": [
+        "demo-fixtures"
+      ],
+      "status": "demo",
+      "explanation": "Walk your device through the fictional courtyard during weekday pedestrian hours.",
+      "appliesTo": "both",
+      "access": "walk-device",
+      "schedule": {
+        "weekdays": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "start": "08:30",
+        "end": "17:00"
+      }
+    },
+    {
+      "id": "court-walking",
+      "featureId": "courtyard-link",
+      "devices": [
+        "bicycle",
+        "ebike-1",
+        "ebike-2",
+        "ebike-3",
+        "escooter"
+      ],
+      "sourceIds": [
+        "demo-fixtures"
+      ],
+      "status": "demo",
+      "explanation": "Outside weekday pedestrian hours, walking a device is also allowed on this fictional link.",
+      "appliesTo": "walk",
+      "access": "allowed",
+      "exceptions": [
+        {
+          "weekdays": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "08:30",
+          "end": "17:00"
+        }
+      ]
+    },
+    {
+      "id": "garden-bicycle",
+      "featureId": "garden-bikeway",
+      "devices": [
+        "bicycle",
+        "ebike-1",
+        "ebike-2"
+      ],
+      "sourceIds": [
+        "demo-fixtures"
+      ],
+      "status": "demo",
+      "explanation": "The fictional bikeway permits bicycles and Class 1 and 2 e-bikes.",
+      "appliesTo": "ride",
+      "access": "allowed",
+      "riderSpeedMph": 12
+    },
+    {
+      "id": "garden-class3",
+      "featureId": "garden-bikeway",
+      "devices": [
+        "ebike-3"
+      ],
+      "sourceIds": [
+        "demo-fixtures"
+      ],
+      "status": "demo",
+      "explanation": "The fictional garden bikeway prohibits Class 3 e-bike riding.",
+      "appliesTo": "ride",
+      "access": "prohibited"
+    },
+    {
+      "id": "garden-scooter",
+      "featureId": "garden-bikeway",
+      "devices": [
+        "escooter"
+      ],
+      "sourceIds": [
+        "demo-fixtures"
+      ],
+      "status": "demo",
+      "explanation": "The fictional garden bikeway requires electric scooter riders to dismount.",
+      "appliesTo": "both",
+      "access": "walk-device"
+    },
+    {
+      "id": "market-speed-gap",
+      "featureId": "market-lane",
+      "devices": [
+        "bicycle",
+        "ebike-1",
+        "ebike-2",
+        "ebike-3",
+        "escooter"
+      ],
+      "sourceIds": [
+        "demo-fixtures"
+      ],
+      "status": "demo",
+      "explanation": "This fictional lane explicitly permits riding. A rider speed ceiling is missing from the sample record.",
+      "appliesTo": "ride",
+      "access": "allowed"
+    },
+    {
+      "id": "viaduct-walking",
+      "featureId": "viaduct",
+      "devices": [
+        "bicycle",
+        "ebike-1",
+        "ebike-2",
+        "ebike-3",
+        "escooter"
+      ],
+      "sourceIds": [
+        "demo-fixtures"
+      ],
+      "status": "demo",
+      "explanation": "This fictional viaduct allows walking a device. Riding evidence has not been supplied.",
+      "appliesTo": "walk",
+      "access": "allowed"
+    },
+    {
+      "id": "south-conflict",
+      "featureId": "south-connector",
+      "devices": [
+        "bicycle",
+        "ebike-1",
+        "ebike-2",
+        "ebike-3",
+        "escooter"
+      ],
+      "sourceIds": [
+        "demo-operator-a"
+      ],
+      "status": "conflict",
+      "explanation": "Fictional practice record A says riding is allowed. Its disagreement with record B awaits review.",
+      "appliesTo": "ride",
+      "access": "allowed"
+    },
+    {
+      "id": "works-closed",
+      "featureId": "works-spur",
+      "devices": [
+        "bicycle",
+        "ebike-1",
+        "ebike-2",
+        "ebike-3",
+        "escooter"
+      ],
+      "sourceIds": [
+        "demo-fixtures"
+      ],
+      "status": "demo",
+      "explanation": "The fictional works closure blocks both riding and walking a device.",
+      "appliesTo": "both",
+      "totalClosure": true,
+      "effective": {
+        "from": "2020-01-01"
+      }
+    },
+    {
+      "id": "ridge-open",
+      "featureId": "ridge-trail",
+      "devices": [
+        "bicycle",
+        "ebike-1",
+        "ebike-2",
+        "ebike-3",
+        "escooter"
+      ],
+      "sourceIds": [
+        "demo-fixtures"
+      ],
+      "status": "demo",
+      "explanation": "This fictional trail permits riding on all five practice device profiles.",
+      "appliesTo": "ride",
+      "access": "allowed",
+      "riderSpeedMph": 10
+    },
+    {
+      "id": "south-conflict-b",
+      "featureId": "south-connector",
+      "devices": [
+        "bicycle",
+        "ebike-1",
+        "ebike-2",
+        "ebike-3",
+        "escooter"
+      ],
+      "sourceIds": [
+        "demo-operator-b"
+      ],
+      "status": "conflict",
+      "explanation": "Fictional practice record B says riding is prohibited. Its disagreement with record A awaits review.",
+      "appliesTo": "ride",
+      "access": "prohibited"
+    }
+  ],
+  "sources": [
+    {
+      "id": "demo-fixtures",
+      "title": "Milestone 1 practice fixtures",
+      "authority": "Project-authored fiction",
+      "url": null,
+      "verifiedOn": null
+    },
+    {
+      "id": "demo-operator-a",
+      "title": "South Connector practice record A",
+      "authority": "Fictional path operator",
+      "url": null,
+      "verifiedOn": null
+    },
+    {
+      "id": "demo-operator-b",
+      "title": "South Connector practice record B",
+      "authority": "Fictional path operator",
+      "url": null,
+      "verifiedOn": null
+    }
+  ],
+  "issues": [
+    {
+      "id": "demo-speed-gap",
+      "title": "Market Lane rider speed",
+      "detail": "Riding permission exists in the practice data, but its rider speed ceiling is missing.",
+      "status": "missing",
+      "sourceIds": [
+        "demo-fixtures"
+      ]
+    },
+    {
+      "id": "demo-access-gap",
+      "title": "Upper Viaduct riding access",
+      "detail": "Only walking access has been entered. The line also crosses Garden Bikeway in the drawing without forming an intersection.",
+      "status": "missing",
+      "sourceIds": [
+        "demo-fixtures"
+      ]
+    },
+    {
+      "id": "demo-conflict",
+      "title": "South Connector access conflict",
+      "detail": "The practice record simulates competing guidance awaiting review.",
+      "status": "conflict",
+      "sourceIds": [
+        "demo-operator-a",
+        "demo-operator-b"
+      ]
+    }
+  ]
+}

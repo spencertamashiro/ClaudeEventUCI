@@ -1,0 +1,230 @@
+{
+  "version": "v1",
+  "mode": "irvine",
+  "rules": [],
+  "sources": [
+    {
+      "id": "uci-housing",
+      "title": "Undergraduate Housing Policies",
+      "authority": "UCI Student Housing",
+      "url": "https://housing.uci.edu/policies/undergraduate/",
+      "verifiedOn": "2026-11-09"
+    },
+    {
+      "id": "uci-safety",
+      "title": "Bike & Scooter Safety",
+      "authority": "UCI Transportation and Distribution Services",
+      "url": "https://www.bike.uci.edu/general-info/bicycle-safety-and-operation/",
+      "verifiedOn": "2026-11-09"
+    },
+    {
+      "id": "uci-pathways",
+      "title": "E-Scooters, Skate Devices, and Pedestrian Safety",
+      "authority": "UCI Transportation and Distribution Services",
+      "url": "https://www.bike.uci.edu/general-info/pedestrian-safety/",
+      "verifiedOn": "2026-11-09"
+    },
+    {
+      "id": "uci-policy",
+      "title": "Policy 904-13",
+      "authority": "University of California, Irvine",
+      "url": "https://policies.uci.edu/policies/procs/904-13/",
+      "verifiedOn": null
+    },
+    {
+      "id": "uci-map",
+      "title": "UC Irvine main campus map",
+      "authority": "University of California, Irvine",
+      "url": "https://ce.uci.edu/uci/media/Documents/campus-map.pdf",
+      "verifiedOn": "2026-11-09"
+    },
+    {
+      "id": "uci-projects",
+      "title": "Current Transportation Projects",
+      "authority": "UCI Transportation and Distribution Services",
+      "url": "https://parking.uci.edu/traffic/current-projects/",
+      "verifiedOn": "2026-11-09"
+    },
+    {
+      "id": "irvine-ipd",
+      "title": "Electric Scooter Safety",
+      "authority": "Irvine Police Department",
+      "url": "https://irvinepd.gov/2025/05/01/electric-scooter-safety/",
+      "verifiedOn": "2026-11-09"
+    },
+    {
+      "id": "ca-scooter-speed",
+      "title": "Vehicle Code §22411",
+      "authority": "California Legislature",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=22411.",
+      "verifiedOn": null
+    },
+    {
+      "id": "irvine-paths",
+      "title": "Guidelines for Shared-Use Paths",
+      "authority": "City of Irvine",
+      "url": "https://legacy.cityofirvine.org/civica/filebank/blobdload.asp?BlobID=34210",
+      "verifiedOn": "2026-11-09"
+    },
+    {
+      "id": "irvine-draft",
+      "title": "January 27, 2026 staff report and draft",
+      "authority": "City of Irvine",
+      "url": "https://irvine.granicus.com/MetaViewer.php?event_id=2764&meta_id=179864&view_id=",
+      "verifiedOn": "2026-11-09"
+    },
+    {
+      "id": "oc-parks",
+      "title": "E-bikes in OC Parks",
+      "authority": "OC Parks",
+      "url": "https://parks.oc.gov/e-bikes",
+      "verifiedOn": "2026-11-09"
+    },
+    {
+      "id": "irvine-gis",
+      "title": "City Bikeways layer metadata",
+      "authority": "City of Irvine GIS",
+      "url": "https://services2.arcgis.com/3mkVbLdbLBFHrfbK/ArcGIS/rest/services/Bikeways/FeatureServer/2",
+      "verifiedOn": "2026-11-09"
+    },
+    {
+      "id": "irvine-terms",
+      "title": "City of Irvine website policies",
+      "authority": "City of Irvine",
+      "url": "https://cityofirvine.gov/sites/default/files/legacy-documents/civica-16812-websitepolicy.pdf",
+      "verifiedOn": "2026-11-09"
+    },
+    {
+      "id": "openfreemap",
+      "title": "OpenFreeMap public instance",
+      "authority": "OpenFreeMap",
+      "url": "https://openfreemap.org/quick_start/",
+      "verifiedOn": "2026-11-09"
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap copyright and license",
+      "authority": "OpenStreetMap Foundation",
+      "url": "https://www.openstreetmap.org/copyright",
+      "verifiedOn": "2026-11-09"
+    },
+    {
+      "id": "irvine-26-05-packet",
+      "title": "Ordinance 26-05 second-reading packet",
+      "authority": "City of Irvine, City Clerk",
+      "url": "https://irvine.granicus.com/MetaViewer.php?event_id=2774&meta_id=180549&view_id=",
+      "verifiedOn": "2026-11-09"
+    },
+    {
+      "id": "irvine-26-05-minutes",
+      "title": "February 10, 2026 signed Council minutes",
+      "authority": "City of Irvine, City Clerk",
+      "url": "https://irvine.granicus.com/MetaViewer.php?event_id=2789&meta_id=181575&view_id=68",
+      "verifiedOn": "2026-11-09"
+    },
+    {
+      "id": "irvine-code",
+      "title": "Municipal Code directory",
+      "authority": "City of Irvine",
+      "url": "https://cityofirvine.gov/about-irvine/municipal-code",
+      "verifiedOn": "2026-11-09"
+    }
+  ],
+  "issues": [
+    {
+      "id": "ring-mall",
+      "title": "Ring Mall hours and device scope",
+      "detail": "UCI housing lists weekday bicycle hours. Transportation summaries give the same clock times with broader wording and no weekday qualifier. Confirm controlling policy, signs, facility boundaries and each device profile.",
+      "status": "conflict",
+      "sourceIds": [
+        "uci-housing",
+        "uci-safety",
+        "uci-pathways",
+        "uci-policy"
+      ]
+    },
+    {
+      "id": "campus-speed",
+      "title": "Campus and housing speed coverage",
+      "detail": "UCI publishes an 8 mph reference. Match the stated area, facility and device scope to surveyed segments, including adjacent student housing, before assigning any ceiling.",
+      "status": "review",
+      "sourceIds": [
+        "uci-housing",
+        "uci-pathways",
+        "uci-map"
+      ]
+    },
+    {
+      "id": "scooter-ceiling",
+      "title": "Electric scooter statute and applicability",
+      "detail": "Irvine Police reports a 15 mph maximum and sidewalk restriction. The official statute text was inaccessible at review time. Check current statutory text, exceptions and segment jurisdiction.",
+      "status": "review",
+      "sourceIds": [
+        "irvine-ipd",
+        "ca-scooter-speed"
+      ]
+    },
+    {
+      "id": "class3",
+      "title": "Class 3 access on connecting bikeways",
+      "detail": "Separate City and county facilities, identify ownership by segment, and confirm enacted language and effective dates. The older City handout, 2026 staff draft, and OC Parks guidance have different scopes.",
+      "status": "review",
+      "sourceIds": [
+        "irvine-paths",
+        "irvine-draft",
+        "oc-parks"
+      ]
+    },
+    {
+      "id": "utc",
+      "title": "University Town Center connections and parking",
+      "detail": "Confirm property boundaries, signed device rules, bridge approaches and rack locations. A reference map alone does not establish access or geometry reuse.",
+      "status": "missing",
+      "sourceIds": [
+        "uci-map",
+        "uci-projects"
+      ]
+    },
+    {
+      "id": "geometry-license",
+      "title": "Reusable bikeway and policy geometry",
+      "detail": "Irvine publishes a City Bikeways query layer. The layer metadata does not establish redistribution rights and the City website policy includes limits. Confirm dataset terms and survey endpoints before importing overlays.",
+      "status": "missing",
+      "sourceIds": [
+        "irvine-gis",
+        "irvine-terms"
+      ]
+    },
+    {
+      "id": "closure-feed",
+      "title": "Current closures and temporary restrictions",
+      "detail": "Confirm authoritative current closure data and effective intervals. A project list is insufficient for determining whether a segment is open.",
+      "status": "missing",
+      "sourceIds": [
+        "uci-projects",
+        "irvine-gis"
+      ]
+    },
+    {
+      "id": "basemap",
+      "title": "Attribution and basemap scope",
+      "detail": "OpenFreeMap and OpenStreetMap provide geographic context. Their display does not verify device access, closures or riding speed.",
+      "status": "review",
+      "sourceIds": [
+        "openfreemap",
+        "osm"
+      ]
+    },
+    {
+      "id": "city-path-speed",
+      "title": "Irvine bicycle-path speed applicability",
+      "detail": "Signed minutes record the adoption of Ordinance 26-05. The adoption packet sets a 20 mph bicycle and e-bike ceiling on bicycle paths and trails, with a reasonable-speed condition and effect 30 days after adoption. Check current codification, geographic jurisdiction and facility classification before attaching it to any segment.",
+      "status": "review",
+      "sourceIds": [
+        "irvine-26-05-packet",
+        "irvine-26-05-minutes",
+        "irvine-code"
+      ]
+    }
+  ]
+}

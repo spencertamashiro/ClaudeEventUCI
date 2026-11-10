@@ -1,0 +1,502 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "courtyard-link",
+      "properties": {
+        "id": "courtyard-link",
+        "name": "Courtyard Link",
+        "kind": "dismount",
+        "provenance": {
+          "method": "Synthetic practice geometry",
+          "sourceId": "demo-fixtures",
+          "details": "Authored on an isolated practice map. Coordinates do not represent a real facility or policy boundary."
+        },
+        "topology": {
+          "from": "west-gate",
+          "to": "plaza",
+          "grade": 0,
+          "direction": "both"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.0041,
+            -0.0002
+          ],
+          [
+            -0.0025,
+            -0.0002
+          ],
+          [
+            -0.0016,
+            0.0001
+          ],
+          [
+            0,
+            0.0001
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "garden-bikeway",
+      "properties": {
+        "id": "garden-bikeway",
+        "name": "Garden Bikeway",
+        "kind": "facility",
+        "provenance": {
+          "method": "Synthetic practice geometry",
+          "sourceId": "demo-fixtures",
+          "details": "Authored on an isolated practice map. Coordinates do not represent a real facility or policy boundary."
+        },
+        "expectedSpeedMph": 9,
+        "topology": {
+          "from": "plaza",
+          "to": "market",
+          "grade": 0,
+          "direction": "both"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0,
+            0.0001
+          ],
+          [
+            0.0017,
+            0.0001
+          ],
+          [
+            0.0025,
+            0.0007
+          ],
+          [
+            0.0042,
+            0.0007
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "market-lane",
+      "properties": {
+        "id": "market-lane",
+        "name": "Market Lane",
+        "kind": "facility",
+        "provenance": {
+          "method": "Synthetic practice geometry",
+          "sourceId": "demo-fixtures",
+          "details": "Authored on an isolated practice map. Coordinates do not represent a real facility or policy boundary."
+        },
+        "roadwaySpeedMph": 25,
+        "expectedSpeedMph": 10,
+        "topology": {
+          "from": "market",
+          "to": "north",
+          "grade": 0,
+          "direction": "both"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.0042,
+            0.0007
+          ],
+          [
+            0.0042,
+            0.002
+          ],
+          [
+            0.0034,
+            0.003
+          ],
+          [
+            0.0011,
+            0.003
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "viaduct",
+      "properties": {
+        "id": "viaduct",
+        "name": "Upper Viaduct",
+        "kind": "facility",
+        "provenance": {
+          "method": "Synthetic practice geometry",
+          "sourceId": "demo-fixtures",
+          "details": "Authored on an isolated practice map. Coordinates do not represent a real facility or policy boundary."
+        },
+        "topology": {
+          "from": "north",
+          "to": "south",
+          "grade": 1,
+          "direction": "forward"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.0011,
+            0.003
+          ],
+          [
+            0.0011,
+            0.0014
+          ],
+          [
+            0.0011,
+            -0.0008
+          ],
+          [
+            0.0011,
+            -0.0025
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "south-connector",
+      "properties": {
+        "id": "south-connector",
+        "name": "South Connector",
+        "kind": "restriction",
+        "provenance": {
+          "method": "Synthetic practice geometry",
+          "sourceId": "demo-fixtures",
+          "details": "Authored on an isolated practice map. Coordinates do not represent a real facility or policy boundary."
+        },
+        "topology": {
+          "from": "west-gate",
+          "to": "south",
+          "grade": 0,
+          "direction": "both"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.0041,
+            -0.0002
+          ],
+          [
+            -0.0041,
+            -0.0025
+          ],
+          [
+            -0.0024,
+            -0.0025
+          ],
+          [
+            0.0011,
+            -0.0025
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "works-spur",
+      "properties": {
+        "id": "works-spur",
+        "name": "Works Spur",
+        "kind": "closure",
+        "provenance": {
+          "method": "Synthetic practice geometry",
+          "sourceId": "demo-fixtures",
+          "details": "Authored on an isolated practice map. Coordinates do not represent a real facility or policy boundary."
+        },
+        "topology": {
+          "from": "south",
+          "to": "works",
+          "grade": 0,
+          "direction": "both"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.0011,
+            -0.0025
+          ],
+          [
+            0.0026,
+            -0.0025
+          ],
+          [
+            0.0032,
+            -0.0016
+          ],
+          [
+            0.0043,
+            -0.0016
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ridge-trail",
+      "properties": {
+        "id": "ridge-trail",
+        "name": "Ridge Trail",
+        "kind": "facility",
+        "provenance": {
+          "method": "Synthetic practice geometry",
+          "sourceId": "demo-fixtures",
+          "details": "Authored on an isolated practice map. Coordinates do not represent a real facility or policy boundary."
+        },
+        "topology": {
+          "from": "west-gate",
+          "to": "ridge",
+          "grade": 0,
+          "direction": "both"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -0.0041,
+            -0.0002
+          ],
+          [
+            -0.0041,
+            0.0015
+          ],
+          [
+            -0.0032,
+            0.0026
+          ],
+          [
+            -0.0014,
+            0.0026
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "courtyard-area",
+      "properties": {
+        "id": "courtyard-area",
+        "name": "Courtyard dismount area",
+        "kind": "dismount",
+        "provenance": {
+          "method": "Synthetic practice geometry",
+          "sourceId": "demo-fixtures",
+          "details": "Authored on an isolated practice map. Coordinates do not represent a real facility or policy boundary."
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.0046,
+              -0.0007
+            ],
+            [
+              0.0004,
+              -0.0007
+            ],
+            [
+              0.0004,
+              0.0006
+            ],
+            [
+              -0.0046,
+              0.0006
+            ],
+            [
+              -0.0046,
+              -0.0007
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "south-area",
+      "properties": {
+        "id": "south-area",
+        "name": "South access review area",
+        "kind": "restriction",
+        "provenance": {
+          "method": "Synthetic practice geometry",
+          "sourceId": "demo-fixtures",
+          "details": "Authored on an isolated practice map. Coordinates do not represent a real facility or policy boundary."
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.0046,
+              -0.0031
+            ],
+            [
+              0.0008,
+              -0.0031
+            ],
+            [
+              0.0008,
+              -0.0019
+            ],
+            [
+              -0.0034,
+              -0.0019
+            ],
+            [
+              -0.0046,
+              -0.0031
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "works-area",
+      "properties": {
+        "id": "works-area",
+        "name": "Works closure area",
+        "kind": "closure",
+        "provenance": {
+          "method": "Synthetic practice geometry",
+          "sourceId": "demo-fixtures",
+          "details": "Authored on an isolated practice map. Coordinates do not represent a real facility or policy boundary."
+        }
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0014,
+              -0.003
+            ],
+            [
+              0.0047,
+              -0.003
+            ],
+            [
+              0.0047,
+              -0.0011
+            ],
+            [
+              0.0014,
+              -0.0011
+            ],
+            [
+              0.0014,
+              -0.003
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "market-stop",
+      "properties": {
+        "id": "market-stop",
+        "name": "Practice Market",
+        "kind": "destination",
+        "provenance": {
+          "method": "Synthetic practice geometry",
+          "sourceId": "demo-fixtures",
+          "details": "Authored on an isolated practice map. Coordinates do not represent a real facility or policy boundary."
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0042,
+          0.0009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "ridge-hall",
+      "properties": {
+        "id": "ridge-hall",
+        "name": "Practice Residence Hall",
+        "kind": "destination",
+        "provenance": {
+          "method": "Synthetic practice geometry",
+          "sourceId": "demo-fixtures",
+          "details": "Authored on an isolated practice map. Coordinates do not represent a real facility or policy boundary."
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0014,
+          0.0026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "plaza-racks",
+      "properties": {
+        "id": "plaza-racks",
+        "name": "Plaza bike racks",
+        "kind": "parking",
+        "provenance": {
+          "method": "Synthetic practice geometry",
+          "sourceId": "demo-fixtures",
+          "details": "Authored on an isolated practice map. Coordinates do not represent a real facility or policy boundary."
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0002,
+          0.0007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "north-racks",
+      "properties": {
+        "id": "north-racks",
+        "name": "North bike racks",
+        "kind": "parking",
+        "provenance": {
+          "method": "Synthetic practice geometry",
+          "sourceId": "demo-fixtures",
+          "details": "Authored on an isolated practice map. Coordinates do not represent a real facility or policy boundary."
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0011,
+          0.0034
+        ]
+      }
+    }
+  ]
+}
